@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Log in</title>
+</head>
+
+<body>
+
+    <div class="header">
+       <h1 class="animated-greeting">Welcome Back!</h1>
+
+        <p>Please log in to your account</p>
+    </div>
+    <div class="login-container">
+        <h1 id="log-in">Log In</h1>
+        <form action="/Login/Home.html" method="get">
+            <form id="login-form">
+                <div class="input-group">
+                    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+                    <input type="email" id="email" name="email" required />
+                    <label for="email">Email</label>
+                    <span class="error-message" id="email-error"></span>
+                    <label class="user" for="username">Username</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                </div>
+                <div class="remember-me">
+                    <label>
+                        <input type="checkbox" id="remember" />
+                        Remember me
+                    </label>
+                </div>
+                <div class="modal" id="errorModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <p>Неверный логин или пароль</p>
+                    </div>
+                </div>
+
+
+                <div class="input-group">
+
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                    <label class="password" for="password">Password</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <button id="button" type="submit">Log In</button>
+            </form>
+
+            <p class="dont">Don't have an account? <a class="sign" href="../Sign-up/Sign-up.html">Sign Up</a></p>
+    </div>
+    <div>
+        <footer class="footer">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

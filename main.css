@@ -1,0 +1,507 @@
+ .login-container {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        box-shadow: 0 8 32px rgba(0, 0, 0, 0.25);
+
+        text-align: center;
+        background: linear-gradient(135deg, white, blue, yellow, red, purple);
+        margin-top: 50px;
+        animation: fadeIn 1.5s ease-in;
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+ }
+
+ @keyframes fadein {
+        from {
+               opacity: 0;
+        }
+
+        to {
+               opacity: 1;
+        }
+ }
+
+ @keyframes gradientBG {
+        0% {
+               background-position: 0% 50%;
+        }
+
+        50% {
+               background-position: 100% 50%;
+        }
+
+        100% {
+               background-position: 0% 50%;
+        }
+ }
+
+ .header {
+        margin-bottom: 20px;
+
+        margin: 0 auto;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+ }
+
+ .login-body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 50px;
+ }
+
+ input[type="text"],
+ input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.3s ease;
+
+ }
+
+ input[type="text"]:focus,
+ input[type="password"]:focus {
+        border-color: #ff4b2b;
+        box-shadow: 0 0 8px rgba(255, 75, 43, 0.5);
+        background-color: #fffdfd;
+ }
+
+ .footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #777;
+        text-align: center;
+ }
+
+ body {
+        animation: fadeIn 1.5s ease-in;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-color: white;
+        animation: gradientBG 15s ease infinite;
+        font-family: 'Courier New', Courier, monospace;
+ }
+
+ @keyframes fadeIn {
+        from {
+               opacity: 0;
+        }
+
+        to {
+               opacity: 1;
+        }
+ }
+
+ @keyframes gradientBG {
+        0% {
+               background-position: 0% 50%;
+        }
+
+        50% {
+               background-position: 100% 50%;
+        }
+
+        100% {
+               background-position: 0% 50%;
+        }
+ }
+
+ #button {
+
+        border: none;
+        color: white;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+        text-align: center;
+        background: linear-gradient(135deg, white, blue, yellow, red, purple);
+        margin-top: 50px;
+        animation: fadeIn 1.5s ease-in;
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+ }
+
+ #button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+ }
+
+ #log-in {
+        margin-bottom: 20px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        background: -moz-linear-gradient(45deg, #ff416c, #ff4b2b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        transition: color 0.3s ease;
+        text-decoration: none;
+
+ }
+
+
+ .sign {
+        color: black;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        background: -moz-linear-gradient(45deg, #ff416c, #ff4b2b);
+ }
+
+
+ .sign:hover {
+        color: wheat;
+        text-decoration: underline;
+ }
+
+ .dont {
+        margin-top: 15px;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        text-align: center;
+
+ }
+
+ label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-align: center;
+ }
+
+ input {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
+
+
+
+ #username,
+ #password {
+        text-align: center;
+
+        width: 75%;
+        padding: 10px;
+        margin: 10px 10px 5px;
+        border-radius: 10px;
+        transition: border-color 0.3s ease;
+        overflow: hidden;
+
+
+
+ }
+
+ #username:focus,
+ #password:focus {
+        border-color: black;
+        outline: none;
+
+
+
+ }
+
+ /* From Uiverse.io by Smit-Prajapati */
+ .container {
+        max-width: 350px;
+        background: #F8F9FD;
+        background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+        border-radius: 40px;
+        padding: 25px 35px;
+        border: 5px solid rgb(255, 255, 255);
+        box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+        margin: 20px;
+ }
+
+ .heading {
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+        color: rgb(16, 137, 211);
+ }
+
+ .form {
+        margin-top: 20px;
+ }
+
+ .form .input {
+        width: 100%;
+        background: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 20px;
+        margin-top: 15px;
+        box-shadow: #cff0ff 0px 10px 10px -5 px;
+        border-inline: 2px solid transparent;
+ }
+
+ .form .input::-moz-placeholder {
+        color: rgb(170, 170, 170);
+ }
+
+ .form .input::placeholder {
+        color: rgb(170, 170, 170);
+ }
+
+ .form .input:focus {
+        outline: none;
+        border-inline: 2px solid #12B1D1;
+ }
+
+ .form .forgot-password {
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+ }
+
+ .form .forgot-password a {
+        font-size: 11px;
+        color: #0099ff;
+        text-decoration: none;
+ }
+
+ .input-group {
+        position: relative;
+        margin-bottom: 20px;
+ }
+
+ .input-group input {
+        width: 75%;
+        padding: 12px 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        font-size: 16px;
+        background: transparent;
+        transition: 0.3s ease;
+        border-radius: 15px;
+ }
+
+ .input-group label {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        color: #999;
+        pointer-events: none;
+        transition: 0.3s ease;
+ }
+
+ .input-group input:focus,
+ .input-group input:valid {
+        border-color: black;
+ }
+
+ .input-group input:focus+label,
+ .input-group input:valid+label {
+        top: -10px;
+        left: 8px;
+        font-size: 12px;
+        color: black;
+        background: white;
+        padding: 0 4px;
+ }
+
+ .input-group {
+        position: relative;
+ }
+
+ .toggle-password {
+        position: absolute;
+        top: 52px;
+        right: 12px;
+        cursor: pointer;
+        user-select: none;
+        font-size: 18px;
+        color: #888;
+        transition: color 0.2s;
+ }
+
+ .toggle-password:hover {
+        color: black
+ }
+
+ input:invalid {
+        border-color: #e74c3c;
+ }
+
+ input:invalid:focus {
+        box-shadow: 0 0 8px rgba(231, 76, 60, 0.6);
+ }
+
+ .theme-toggle {
+        position: absolute;
+        top: 40px;
+        padding-top: 10px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+ }
+
+
+
+ .dark-theme {
+        background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+        color: white;
+ }
+
+ .dark-theme .login-container {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ .dark-theme label,
+ .dark-theme p,
+ .dark-theme footer {
+        color: #ccc;
+ }
+
+ .dark-theme input {
+        background: #222;
+        color: white;
+        border-color: #444;
+ }
+
+ .error-message {
+        color: #e74c3c;
+        font-size: 12px;
+        margin-top: 4px;
+        display: block;
+        height: 16px;
+ }
+
+ input.invalid {
+        border-color: #e74c3c;
+        box-shadow: 0 0 5px rgba(231, 76, 60, 0.6);
+ }
+
+ .remember-me {
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #444;
+ }
+
+ .dark-theme .remember-me {
+        color: #ccc;
+ }
+
+ @media (max-width: 600px) {
+        .login-container {
+               width: 90%;
+               padding: 20px;
+        }
+
+        .input-group input {
+               font-size: 14px;
+        }
+
+        .theme-toggle {
+               font-size: 20px;
+               top: 10px;
+               right: 10px;
+        }
+ }
+
+ .user,
+ .password {
+        font-size: x;
+
+        margin-top: 40px;
+        margin-left: 95px;
+ }
+
+
+ .loader {
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: auto;
+
+ }
+
+ @keyframes spin {
+        0% {
+               transform: rotate(0deg);
+        }
+
+        100% {
+               transform: rotate(360deg);
+        }
+ }
+
+ input:focus {
+        outline: none;
+        border-color: #ff6600;
+        box-shadow: 0 0 10px #ff6600;
+        transition: 0.3s ease;
+ }
+
+ .animated-greeting {
+        animation: fadeInUp 1s ease-out;
+ }
+
+ @keyframes fadeInUp {
+        from {
+               opacity: 0;
+               transform: translateY(30px);
+        }
+
+        to {
+               opacity: 1;
+               transform: translateY(0);
+        }
+ }
+
+ .loader {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ }
+
+ .loader::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f90;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+ }
+
+ .hidden {
+        display: none;
+ }
+
+ @keyframes spin {
+        to {
+               transform: rotate(360deg);
+        }
+ }
